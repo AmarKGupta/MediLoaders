@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doctor's Homepage</title>
+	<link rel="stylesheet" type="text/css" href="doctorpage.css">
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+	<h1>MediLoaders</h1>
+		<div class="data"><p> Patients under Evaluation</p>
+		<table>
+			<tr>
+				<td><a href="patient1.html"> P101 </a> </td>
+				<td><a href="patient1.html"> Avinash Kumar</a></td>
+			</tr>
+			<tr>
+				<td><a href="patient1.html"> P102 </a> </td>
+				<td><a href="patient1.html"> Radha Kumari</a></td>
+			</tr>
+			<tr>
+				<td><a href="patient1.html"> P103 </a> </td>
+				<td><a href="patient1.html"> Manish Shaw</a></td>
+			</tr>
+		</table>
+		<button onclick="openForm()">ADD NEW</button>
+
+	</div>
+		<div id="newPatient" class="form-popup" style="display: none">
+			<form class="nwePatientForm" id="formContent">
+				 <input type="text" id="userid" class="fadeIn second" name="userid" placeholder="Patient Id">
+			      <input type="text" id="name" class="fadeIn second" name="name" placeholder="Name">
+			      <input type="text" id="email" class="fadeIn second" name="email" placeholder="Email">
+			      <input type="text" id="number" class="fadeIn second" name="number" placeholder="Contact Number">
+			
+			      <input type="submit" class="fadeIn fourth" onclick="addNewPatient()" value="Add Patient">
+			</form>
+		</div>
+<script type="text/javascript">
+	function openForm(){
+		document.getElementById("newPatient").style.display="Block"
+	}
+	function addNewPatient(){
+		document.getElementById("newPatient").style.display="none"
+		location.reload()
+	}
+
+
+</script>
+
+</body>
+</html>

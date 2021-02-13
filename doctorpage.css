@@ -1,0 +1,15 @@
+html {
+  background-color: #56baed;
+}
+h1{
+  background:rgb(173,216,230);
+
+}
+.data{
+	background:rgb(173,216,230);
+  border:10px solid black;
+  padding-left:120px;
+  width:450px;
+  margin: 20px auto;
+  text-decoration-color: black;
+}

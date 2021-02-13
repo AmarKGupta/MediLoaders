@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	
+</head>
+<body>
+  <h1>MediLoaders</h1>
+	<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+     <h2 class="active"> Sign Up </h2>
+    
+     <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="logo.jpg" width="40px" height="90px" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form id="signUpForm" action="login.html" method="post">
+      <input type="text" id="userid" class="fadeIn second" name="userid" placeholder="User Id">
+      <input type="text" id="name" class="fadeIn second" name="name" placeholder="Name">
+      <input type="text" id="email" class="fadeIn second" name="email" placeholder="Email">
+      <input type="text" id="number" class="fadeIn second" name="number" placeholder="Contact Number">
+      <input type="text" id="hospitalname" class="fadeIn second" name="hospitalname" placeholder="Hospital Name">
+      <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
+      
+    <input type="submit" class="fadeIn fourth" onclick="submitForm()" value="Sign Up" >
+    </form>
+
+  </div>
+</div>
+<script type="text/javascript">
+  function submitForm(){
+    document.getElementById("signUpForm").submit();
+  }
+</script>
+</body>
+</html>
